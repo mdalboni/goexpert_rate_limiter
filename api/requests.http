@@ -1,0 +1,14 @@
+@baseUrl = http://localhost:8080
+
+
+### Limit by IP
+# @name no_api_key
+
+GET {{baseUrl}}/hello HTTP/1.1
+
+
+### Limit by API Key
+# @name api_key
+
+GET {{baseUrl}}/hello HTTP/1.1
+API_KEY: abc123
